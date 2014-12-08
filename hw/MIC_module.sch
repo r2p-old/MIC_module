@@ -8467,100 +8467,6 @@ DIN A3, landscape with extra doc field</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="OPL-Connector">
-<packages>
-<package name="9+4P-SMD-L16.1*W14.5*H1.85MM">
-<wire x1="1.143" y1="7.429" x2="14.986" y2="7.429" width="0.127" layer="21"/>
-<wire x1="14.986" y1="7.429" x2="14.986" y2="4.8979" width="0.127" layer="21"/>
-<wire x1="14.986" y1="4.8979" x2="14.802" y2="3.898" width="0.127" layer="21" curve="-20.855518"/>
-<wire x1="14.802" y1="3.898" x2="13.97" y2="-0.6231" width="0.127" layer="21" curve="20.85427"/>
-<wire x1="13.97" y1="-0.6231" x2="13.97" y2="-7.557" width="0.127" layer="21"/>
-<wire x1="13.97" y1="-7.557" x2="0" y2="-7.557" width="0.127" layer="21"/>
-<wire x1="0" y1="-7.557" x2="0" y2="6.032" width="0.127" layer="21"/>
-<wire x1="0" y1="6.032" x2="1.143" y2="6.032" width="0.127" layer="21"/>
-<wire x1="1.143" y1="6.032" x2="1.143" y2="7.429" width="0.127" layer="21"/>
-<smd name="1" x="0" y="2.25" dx="1.6" dy="0.7" layer="1"/>
-<smd name="2" x="0" y="1.15" dx="1.6" dy="0.7" layer="1"/>
-<smd name="3" x="0" y="0.05" dx="1.6" dy="0.7" layer="1"/>
-<smd name="4" x="0" y="-1.05" dx="1.6" dy="0.7" layer="1"/>
-<smd name="5" x="0" y="-2.15" dx="1.6" dy="0.7" layer="1"/>
-<smd name="6" x="0" y="-3.25" dx="1.6" dy="0.7" layer="1"/>
-<smd name="7" x="0" y="-4.35" dx="1.6" dy="0.7" layer="1"/>
-<smd name="8" x="0" y="-5.45" dx="1.6" dy="0.7" layer="1"/>
-<smd name="9" x="0" y="-6.55" dx="1.6" dy="0.7" layer="1"/>
-<smd name="G1" x="0.6" y="-7.85" dx="1.6" dy="1.4" layer="1"/>
-<smd name="G2" x="10.1" y="-7.85" dx="2.2" dy="1.4" layer="1"/>
-<smd name="G4" x="0.5" y="6.95" dx="1.4" dy="1.8" layer="1"/>
-<smd name="G3" x="10.1" y="7.85" dx="2.2" dy="1.4" layer="1"/>
-<text x="2.54" y="7.747" size="0.889" layer="25" ratio="11">&gt;name</text>
-<text x="2.54" y="-0.635" size="0.635" layer="27" ratio="10">&gt;value</text>
-<text x="4.826" y="2.159" size="0.254" layer="33" ratio="10">&gt;name</text>
-<rectangle x1="0" y1="-7.493" x2="13.97" y2="7.366" layer="39"/>
-<hole x="10.5" y="-4.95" drill="0.9"/>
-<hole x="10.5" y="3.05" drill="0.9"/>
-<rectangle x1="4.4" y1="-6.1" x2="6.4" y2="2.9" layer="41"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MICRO-SD-CARD-HOLDER-9P">
-<wire x1="-12.7" y1="11.43" x2="-12.7" y2="-11.43" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-11.43" x2="12.7" y2="-11.43" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-11.43" x2="12.7" y2="13.97" width="0.254" layer="94"/>
-<wire x1="12.7" y1="13.97" x2="6.35" y2="13.97" width="0.254" layer="94"/>
-<wire x1="6.35" y1="13.97" x2="5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="5.08" y1="12.7" x2="3.81" y2="12.7" width="0.254" layer="94"/>
-<wire x1="3.81" y1="12.7" x2="3.81" y2="13.97" width="0.254" layer="94"/>
-<wire x1="3.81" y1="13.97" x2="1.27" y2="13.97" width="0.254" layer="94"/>
-<wire x1="1.27" y1="13.97" x2="-1.27" y2="11.43" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="11.43" x2="-12.7" y2="11.43" width="0.254" layer="94"/>
-<text x="-13.97" y="12.7" size="1.27" layer="95" ratio="10">&gt;name</text>
-<text x="-7.62" y="12.7" size="1.27" layer="96" ratio="10">&gt;value</text>
-<pin name="DATA2" x="-17.78" y="10.16" length="middle"/>
-<pin name="CS" x="-17.78" y="7.62" length="middle"/>
-<pin name="DI" x="-17.78" y="5.08" length="middle"/>
-<pin name="VDD" x="-17.78" y="2.54" length="middle"/>
-<pin name="SCLK" x="-17.78" y="0" length="middle"/>
-<pin name="VSS" x="-17.78" y="-2.54" length="middle"/>
-<pin name="DO" x="-17.78" y="-5.08" length="middle"/>
-<pin name="DATA1" x="-17.78" y="-7.62" length="middle"/>
-<pin name="CDN" x="-17.78" y="-10.16" length="middle"/>
-<pin name="G4" x="7.62" y="19.05" length="middle" rot="R270"/>
-<pin name="G3" x="10.16" y="19.05" length="middle" rot="R270"/>
-<pin name="G1" x="7.62" y="-16.51" length="middle" rot="R90"/>
-<pin name="G2" x="10.16" y="-16.51" length="middle" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MICRO-SD-CARD-HOLDER-9P" prefix="J" uservalue="yes">
-<description>320090008</description>
-<gates>
-<gate name="G$1" symbol="MICRO-SD-CARD-HOLDER-9P" x="0" y="0"/>
-</gates>
-<devices>
-<device name="'MICROSD-9P'" package="9+4P-SMD-L16.1*W14.5*H1.85MM">
-<connects>
-<connect gate="G$1" pin="CDN" pad="9"/>
-<connect gate="G$1" pin="CS" pad="2"/>
-<connect gate="G$1" pin="DATA1" pad="8"/>
-<connect gate="G$1" pin="DATA2" pad="1"/>
-<connect gate="G$1" pin="DI" pad="3"/>
-<connect gate="G$1" pin="DO" pad="7"/>
-<connect gate="G$1" pin="G1" pad="G1"/>
-<connect gate="G$1" pin="G2" pad="G2"/>
-<connect gate="G$1" pin="G3" pad="G3"/>
-<connect gate="G$1" pin="G4" pad="G4"/>
-<connect gate="G$1" pin="SCLK" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-<connect gate="G$1" pin="VSS" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8651,12 +8557,6 @@ DIN A3, landscape with extra doc field</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="100"/>
 <part name="C15" library="rcl" deviceset="C-EU" device="C0603" value="15p"/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
-<part name="J3" library="OPL-Connector" deviceset="MICRO-SD-CARD-HOLDER-9P" device="'MICROSD-9P'"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="R9" library="rcl" deviceset="R-EU_" device="R0603" value="100k"/>
-<part name="+3V14" library="supply1" deviceset="+3V3" device=""/>
-<part name="GND28" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8774,12 +8674,6 @@ DIN A3, landscape with extra doc field</description>
 <instance part="R5" gate="G$1" x="187.96" y="154.94" rot="R180"/>
 <instance part="C15" gate="G$1" x="195.58" y="149.86"/>
 <instance part="GND27" gate="1" x="195.58" y="142.24"/>
-<instance part="J3" gate="G$1" x="477.52" y="139.7"/>
-<instance part="R6" gate="G$1" x="452.12" y="157.48" rot="R90"/>
-<instance part="R7" gate="G$1" x="444.5" y="157.48" rot="R90"/>
-<instance part="R9" gate="G$1" x="436.88" y="157.48" rot="R90"/>
-<instance part="+3V14" gate="G$1" x="457.2" y="170.18"/>
-<instance part="GND28" gate="1" x="457.2" y="124.46"/>
 </instances>
 <busses>
 </busses>
@@ -8997,12 +8891,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="C15" gate="G$1" pin="2"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="VSS"/>
-<wire x1="459.74" y1="137.16" x2="457.2" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="137.16" x2="457.2" y2="127" width="0.1524" layer="91"/>
-<pinref part="GND28" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -9131,25 +9019,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="+3V13" gate="G$1" pin="+3V3"/>
 <wire x1="182.88" y1="195.58" x2="180.34" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="195.58" x2="180.34" y2="198.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="VDD"/>
-<wire x1="459.74" y1="142.24" x2="457.2" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="142.24" x2="457.2" y2="165.1" width="0.1524" layer="91"/>
-<pinref part="+3V14" gate="G$1" pin="+3V3"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="457.2" y1="165.1" x2="457.2" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="457.2" y1="165.1" x2="452.12" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="452.12" y1="165.1" x2="444.5" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="444.5" y1="165.1" x2="436.88" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="436.88" y1="165.1" x2="436.88" y2="162.56" width="0.1524" layer="91"/>
-<junction x="457.2" y="165.1"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="444.5" y1="162.56" x2="444.5" y2="165.1" width="0.1524" layer="91"/>
-<junction x="444.5" y="165.1"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="452.12" y1="162.56" x2="452.12" y2="165.1" width="0.1524" layer="91"/>
-<junction x="452.12" y="165.1"/>
 </segment>
 </net>
 <net name="JTMS" class="0">
@@ -9463,53 +9332,6 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="U$6" gate="G$1" pin="PB13"/>
 <wire x1="66.04" y1="236.22" x2="66.04" y2="238.76" width="0.1524" layer="91"/>
 <label x="66.04" y="238.76" size="1.778" layer="95" rot="R90"/>
-</segment>
-</net>
-<net name="SD_!CS" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="CS"/>
-<wire x1="459.74" y1="147.32" x2="436.88" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="436.88" y1="147.32" x2="431.8" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="436.88" y1="152.4" x2="436.88" y2="147.32" width="0.1524" layer="91"/>
-<junction x="436.88" y="147.32"/>
-<label x="431.8" y="147.32" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="SD_CLK" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="SCLK"/>
-<wire x1="459.74" y1="139.7" x2="431.8" y2="139.7" width="0.1524" layer="91"/>
-<label x="431.8" y="139.7" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="SD_MOSI" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="DI"/>
-<wire x1="459.74" y1="144.78" x2="444.5" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="444.5" y1="144.78" x2="431.8" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="444.5" y1="152.4" x2="444.5" y2="144.78" width="0.1524" layer="91"/>
-<junction x="444.5" y="144.78"/>
-<label x="431.8" y="144.78" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="SD_MISO" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="DO"/>
-<wire x1="459.74" y1="134.62" x2="452.12" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="452.12" y1="134.62" x2="431.8" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="452.12" y1="152.4" x2="452.12" y2="134.62" width="0.1524" layer="91"/>
-<junction x="452.12" y="134.62"/>
-<label x="431.8" y="134.62" size="1.778" layer="95" rot="MR0"/>
-</segment>
-</net>
-<net name="SD_!CD" class="0">
-<segment>
-<pinref part="J3" gate="G$1" pin="CDN"/>
-<wire x1="459.74" y1="129.54" x2="431.8" y2="129.54" width="0.1524" layer="91"/>
-<label x="431.8" y="129.54" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 </nets>
