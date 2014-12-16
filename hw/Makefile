@@ -2,7 +2,7 @@
 EAGLE := /opt/eagle-7.2.0/bin/eagle
 
 # Gerbv PCB image preview parameters - colours, plus resolution
-GERBER_IMAGE_RESOLUTION?=300
+GERBER_IMAGE_RESOLUTION?=1200
 BACKGROUND_COLOUR?=000000
 HOLES_COLOUR?=000000
 SILKSCREEN_COLOUR?=C4C4C4
@@ -32,10 +32,7 @@ gerbers: mkdir 2layers
 doc: gerbers pdf png
 
 
-
-
 ### GERBER FILES GENERATION
-
 mkdir:
 	$(MKDIR) $(GERBERS_PATH)
 
@@ -88,13 +85,14 @@ pdf:
 #	@rm $(PROJECT_NAME)-schematic.ps
 	
 png:  $(PROJECT_NAME).GTL $(PROJECT_NAME).GTS $(PROJECT_NAME).GTO $(PROJECT_NAME).GTP $(PROJECT_NAME).GBL $(PROJECT_NAME).GBS $(PROJECT_NAME).GBO $(PROJECT_NAME).GBP  $(PROJECT_NAME).TXT $(PROJECT_NAME).GML $(PROJECT_NAME).place
-	`gerbv --export=png --output=$(PROJECT_NAME)-layout.png --dpi=$(GERBER_IMAGE_RESOLUTION) \
-	--background=#000000 --foreground=#$(HOLES_COLOUR) $(GERBERS_PATH)/$(PROJECT_NAME).TXT \
+	`gerbv --export=png --output=$(PROJECT_NAME)-layout.png --dpi=$(GERBER_IMAGE_RESOLUTION) --background=#000000 \
+	--foreground=#$(HOLES_COLOUR) $(GERBERS_PATH)/$(PROJECT_NAME).TXT \
 	--foreground=#$(SILKSCREEN_COLOUR) $(GERBERS_PATH)/$(PROJECT_NAME).GTO \
 	--foreground=#$(SILKSCREEN_COLOUR) $(GERBERS_PATH)/$(PROJECT_NAME).place \
 	--foreground=#$(PADS_COLOUR) $(GERBERS_PATH)/$(PROJECT_NAME).GTS \
 	--foreground=#$(TOP_SOLDERMASK_COLOUR) $(GERBERS_PATH)/$(PROJECT_NAME).GTL \
 	--foreground=#$(BOTTOM_SOLDERMASK_COLOUR) $(GERBERS_PATH)/$(PROJECT_NAME).GBL `
+
 
 ### CLEAN ###
 
