@@ -8773,7 +8773,7 @@ DIN A3, landscape with extra doc field</description>
 <instance part="GND10" gate="1" x="76.2" y="60.96"/>
 <instance part="C7" gate="G$1" x="124.46" y="71.12"/>
 <instance part="GND22" gate="1" x="124.46" y="63.5"/>
-<instance part="LED1" gate="G$1" x="22.86" y="114.3" rot="R180"/>
+<instance part="LED1" gate="G$1" x="22.86" y="114.3"/>
 <instance part="R1" gate="G$1" x="22.86" y="127" rot="R90"/>
 <instance part="GND16" gate="1" x="81.28" y="10.16"/>
 <instance part="GND17" gate="1" x="124.46" y="10.16"/>
@@ -8797,7 +8797,7 @@ DIN A3, landscape with extra doc field</description>
 <instance part="U$6" gate="G$1" x="55.88" y="205.74"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="287.02" y="0"/>
-<instance part="GND13" gate="1" x="22.86" y="109.22"/>
+<instance part="GND13" gate="1" x="22.86" y="104.14"/>
 <instance part="SOT1" gate="G$1" x="93.98" y="68.58"/>
 <instance part="U$1" gate="A" x="27.94" y="22.86"/>
 <instance part="U$5" gate="G$1" x="116.84" y="170.18"/>
@@ -8990,8 +8990,9 @@ DIN A3, landscape with extra doc field</description>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="22.86" y1="106.68" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
@@ -9390,8 +9391,8 @@ DIN A3, landscape with extra doc field</description>
 <net name="N$4" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="22.86" y1="119.38" x2="22.86" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="116.84" x2="22.86" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="MIC_CLK" class="0">
