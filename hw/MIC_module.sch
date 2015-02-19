@@ -7391,103 +7391,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="samtec">
-<packages>
-<package name="FTSH-105">
-<wire x1="-5.5" y1="2" x2="5.5" y2="2" width="0.127" layer="21"/>
-<wire x1="5.5" y1="2" x2="5.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="5.5" y1="-2" x2="-5.5" y2="-2" width="0.127" layer="21"/>
-<wire x1="-5.5" y1="-2" x2="-5.5" y2="2" width="0.127" layer="21"/>
-<smd name="P$1" x="-2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$2" x="-2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$3" x="-1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$4" x="-1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$5" x="0" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$6" x="0" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$7" x="1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$8" x="1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$9" x="2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-<smd name="P$10" x="2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
-</package>
-<package name="FTSH-105-TH">
-<pad name="1" x="-2.54" y="0" drill="0.7112" diameter="1.016"/>
-<pad name="2" x="-2.54" y="1.27" drill="0.7112" diameter="1.016"/>
-<pad name="3" x="-1.27" y="0" drill="0.7112" diameter="1.016"/>
-<pad name="4" x="-1.27" y="1.27" drill="0.7112" diameter="1.016"/>
-<pad name="5" x="0" y="0" drill="0.7112" diameter="1.016"/>
-<pad name="6" x="0" y="1.27" drill="0.7112" diameter="1.016"/>
-<pad name="7" x="1.27" y="0" drill="0.7112" diameter="1.016"/>
-<pad name="8" x="1.27" y="1.27" drill="0.7112" diameter="1.016"/>
-<pad name="9" x="2.54" y="0" drill="0.7112" diameter="1.016"/>
-<pad name="10" x="2.54" y="1.27" drill="0.7112" diameter="1.016"/>
-<wire x1="-5.08" y1="2.54" x2="5.715" y2="2.54" width="0.127" layer="21"/>
-<wire x1="5.715" y1="2.54" x2="5.715" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="5.715" y1="-1.27" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="2.54" width="0.127" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="FTSH-105">
-<wire x1="0" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="15.24" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
-<pin name="P$1" x="-2.54" y="12.7" visible="pad" length="middle"/>
-<pin name="P$2" x="12.7" y="12.7" visible="pad" length="middle" rot="R180"/>
-<pin name="P$3" x="-2.54" y="10.16" visible="pad" length="middle"/>
-<pin name="P$4" x="12.7" y="10.16" visible="pad" length="middle" rot="R180"/>
-<pin name="P$5" x="-2.54" y="7.62" visible="pad" length="middle"/>
-<pin name="P$6" x="12.7" y="7.62" visible="pad" length="middle" rot="R180"/>
-<pin name="P$7" x="-2.54" y="5.08" visible="pad" length="middle"/>
-<pin name="P$8" x="12.7" y="5.08" visible="pad" length="middle" rot="R180"/>
-<pin name="P$9" x="-2.54" y="2.54" visible="pad" length="middle"/>
-<pin name="P$10" x="12.7" y="2.54" visible="pad" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="FTSH-105">
-<gates>
-<gate name="G$1" symbol="FTSH-105" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FTSH-105">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TH" package="FTSH-105-TH">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$10" pad="10"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-<connect gate="G$1" pin="P$3" pad="3"/>
-<connect gate="G$1" pin="P$4" pad="4"/>
-<connect gate="G$1" pin="P$5" pad="5"/>
-<connect gate="G$1" pin="P$6" pad="6"/>
-<connect gate="G$1" pin="P$7" pad="7"/>
-<connect gate="G$1" pin="P$8" pad="8"/>
-<connect gate="G$1" pin="P$9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="OPL Eagle Library">
 <packages>
 <package name="4P-2.0">
@@ -7674,190 +7577,6 @@ Source: www.kingbright.com</description>
 <connect gate="USB" pin="GND@3" pad="P1 P2"/>
 <connect gate="USB" pin="ID" pad="4"/>
 <connect gate="USB" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="maxim">
-<packages>
-<package name="TDFN-10">
-<smd name="P$1" x="-1" y="1" dx="0.7" dy="0.3" layer="1"/>
-<smd name="P$2" x="-1" y="0.5" dx="0.7" dy="0.3" layer="1"/>
-<smd name="P$3" x="-1" y="0" dx="0.7" dy="0.3" layer="1"/>
-<smd name="P$4" x="-1" y="-0.5" dx="0.7" dy="0.3" layer="1"/>
-<smd name="P$5" x="-1" y="-1" dx="0.7" dy="0.3" layer="1"/>
-<smd name="P$6" x="1" y="-1" dx="0.7" dy="0.3" layer="1" rot="R180"/>
-<smd name="P$7" x="1" y="-0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
-<smd name="P$8" x="1" y="0" dx="0.7" dy="0.3" layer="1" rot="R180"/>
-<smd name="P$9" x="1" y="0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
-<smd name="P$10" x="1" y="1" dx="0.7" dy="0.3" layer="1" rot="R180"/>
-<smd name="P$11" x="0" y="0" dx="2.08" dy="0.8" layer="1" rot="R270"/>
-<wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
-<polygon width="0.127" layer="21">
-<vertex x="-1" y="1"/>
-<vertex x="-0.5" y="1.5"/>
-<vertex x="-1" y="1.5"/>
-</polygon>
-</package>
-<package name="SO-08">
-<description>&lt;B&gt;Small Outline Narrow Plastic Gull Wing&lt;/B&gt;&lt;p&gt;
-150-mil body, package type SN</description>
-<wire x1="-2.9" y1="3.9" x2="2.9" y2="3.9" width="0.1998" layer="39"/>
-<wire x1="2.9" y1="3.9" x2="2.9" y2="-3.9" width="0.1998" layer="39"/>
-<wire x1="2.9" y1="-3.9" x2="-2.9" y2="-3.9" width="0.1998" layer="39"/>
-<wire x1="-2.9" y1="-3.9" x2="-2.9" y2="3.9" width="0.1998" layer="39"/>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="-1.905" y="-0.635" size="0.4064" layer="48">IPC SO8</text>
-<text x="-1.905" y="0.365" size="0.3048" layer="48">JEDEC MS-012 AA</text>
-<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
-<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
-<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
-<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
-<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
-<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
-<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
-<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="35"/>
-</package>
-<package name="SOT23-8L">
-<description>&lt;b&gt;SC70/SOT23-8&lt;/b&gt;&lt;p&gt;
-Source: http://datasheets.maxim-ic.com/en/ds/MAX4335-MAX4338.pdf</description>
-<wire x1="-1.45" y1="0.825" x2="1.45" y2="0.825" width="0.1016" layer="51"/>
-<wire x1="1.45" y1="0.825" x2="1.45" y2="-0.825" width="0.1016" layer="21"/>
-<wire x1="1.45" y1="-0.825" x2="-1.45" y2="-0.825" width="0.1016" layer="51"/>
-<wire x1="-1.45" y1="-0.825" x2="-1.45" y2="0.825" width="0.1016" layer="21"/>
-<circle x="-1.15" y="-0.525" radius="0.125" width="0" layer="21"/>
-<smd name="1" x="-0.975" y="-1.225" dx="0.45" dy="1" layer="1"/>
-<smd name="2" x="-0.325" y="-1.225" dx="0.45" dy="1" layer="1"/>
-<smd name="3" x="0.325" y="-1.225" dx="0.45" dy="1" layer="1"/>
-<smd name="4" x="0.975" y="-1.225" dx="0.45" dy="1" layer="1"/>
-<smd name="5" x="0.975" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
-<smd name="6" x="0.325" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
-<smd name="7" x="-0.325" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
-<smd name="8" x="-0.975" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
-<text x="-1.905" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.175" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.75" y2="-0.85" layer="51"/>
-<rectangle x1="-0.55" y1="-1.5" x2="-0.1" y2="-0.85" layer="51"/>
-<rectangle x1="0.1" y1="-1.5" x2="0.55" y2="-0.85" layer="51"/>
-<rectangle x1="0.75" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.75" y1="0.85" x2="1.2" y2="1.5" layer="51" rot="R180"/>
-<rectangle x1="0.1" y1="0.85" x2="0.55" y2="1.5" layer="51" rot="R180"/>
-<rectangle x1="-0.55" y1="0.85" x2="-0.1" y2="1.5" layer="51" rot="R180"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.75" y2="1.5" layer="51" rot="R180"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MAX17501">
-<pin name="VIN" x="-15.24" y="10.16" visible="pin" length="middle"/>
-<pin name="EN" x="-15.24" y="5.08" visible="pin" length="middle"/>
-<pin name="!RESET" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="VCC" x="-15.24" y="-5.08" visible="pin" length="middle"/>
-<pin name="SS" x="-15.24" y="-10.16" visible="pin" length="middle"/>
-<pin name="PGND" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="FB" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="LX" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
-<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
-<pin name="NC/COMP" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-</symbol>
-<symbol name="MAX3051">
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="TXD" x="-15.24" y="5.08" visible="pin" length="middle"/>
-<pin name="RXD" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="SHDN" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="RS" x="-15.24" y="-2.54" visible="pin" length="middle"/>
-<pin name="GND" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="CANL" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="CANH" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MAX17501">
-<gates>
-<gate name="G$1" symbol="MAX17501" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TDFN-10">
-<connects>
-<connect gate="G$1" pin="!RESET" pad="P$8"/>
-<connect gate="G$1" pin="EN" pad="P$3"/>
-<connect gate="G$1" pin="FB" pad="P$5"/>
-<connect gate="G$1" pin="GND" pad="P$9"/>
-<connect gate="G$1" pin="LX" pad="P$10"/>
-<connect gate="G$1" pin="NC/COMP" pad="P$7"/>
-<connect gate="G$1" pin="PGND" pad="P$1 P$11"/>
-<connect gate="G$1" pin="SS" pad="P$6"/>
-<connect gate="G$1" pin="VCC" pad="P$4"/>
-<connect gate="G$1" pin="VIN" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX3051" prefix="SOT23">
-<gates>
-<gate name="G$1" symbol="MAX3051" x="0" y="0"/>
-</gates>
-<devices>
-<device name="ESA" package="SO-08">
-<connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RS" pad="8"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="SHDN" pad="5"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="EKA" package="SOT23-8L">
-<connects>
-<connect gate="G$1" pin="CANH" pad="7"/>
-<connect gate="G$1" pin="CANL" pad="6"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="RS" pad="8"/>
-<connect gate="G$1" pin="RXD" pad="4"/>
-<connect gate="G$1" pin="SHDN" pad="5"/>
-<connect gate="G$1" pin="TXD" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12126,6 +11845,252 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="r2p_ic">
+<packages>
+<package name="TDFN-10">
+<wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.127" layer="51"/>
+<smd name="P$1" x="-1" y="1" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$2" x="-1" y="0.5" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$3" x="-1" y="0" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$4" x="-1" y="-0.5" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$5" x="-1" y="-1" dx="0.7" dy="0.3" layer="1"/>
+<smd name="P$6" x="1" y="-1" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$7" x="1" y="-0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$8" x="1" y="0" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$9" x="1" y="0.5" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$10" x="1" y="1" dx="0.7" dy="0.3" layer="1" rot="R180"/>
+<smd name="P$11" x="0" y="0" dx="2.08" dy="0.8" layer="1" rot="R270"/>
+<text x="0" y="0" size="1" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<polygon width="0.127" layer="51">
+<vertex x="-1" y="1"/>
+<vertex x="-0.5" y="1.5"/>
+<vertex x="-1" y="1.5"/>
+</polygon>
+<text x="2" y="0" size="1" layer="27" font="vector" rot="R90" align="center">&gt;VALUE</text>
+<rectangle x1="-1" y1="0.9" x2="-0.7" y2="1.1" layer="51"/>
+<rectangle x1="-1" y1="0.4" x2="-0.7" y2="0.6" layer="51"/>
+<rectangle x1="-1" y1="-0.1" x2="-0.7" y2="0.1" layer="51"/>
+<rectangle x1="-1" y1="-0.6" x2="-0.7" y2="-0.4" layer="51"/>
+<rectangle x1="-1" y1="-1.1" x2="-0.7" y2="-0.9" layer="51"/>
+<rectangle x1="0.7" y1="-1.1" x2="1" y2="-0.9" layer="51"/>
+<rectangle x1="0.7" y1="-0.6" x2="1" y2="-0.4" layer="51"/>
+<rectangle x1="0.7" y1="-0.1" x2="1" y2="0.1" layer="51"/>
+<rectangle x1="0.7" y1="0.4" x2="1" y2="0.6" layer="51"/>
+<rectangle x1="0.7" y1="0.9" x2="1" y2="1.1" layer="51"/>
+</package>
+<package name="SOT23-8L">
+<description>&lt;b&gt;SC70/SOT23-8&lt;/b&gt;&lt;p&gt;
+Source: http://datasheets.maxim-ic.com/en/ds/MAX4335-MAX4338.pdf</description>
+<circle x="-1" y="-0.5" radius="0.125" width="0" layer="51"/>
+<wire x1="-1.45" y1="0.825" x2="1.45" y2="0.825" width="0.1016" layer="51"/>
+<wire x1="1.45" y1="0.825" x2="1.45" y2="-0.825" width="0.1016" layer="51"/>
+<wire x1="1.45" y1="-0.825" x2="-1.45" y2="-0.825" width="0.1016" layer="51"/>
+<wire x1="-1.45" y1="-0.825" x2="-1.45" y2="0.825" width="0.1016" layer="51"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.75" y2="-0.85" layer="51"/>
+<rectangle x1="-0.55" y1="-1.5" x2="-0.1" y2="-0.85" layer="51"/>
+<rectangle x1="0.1" y1="-1.5" x2="0.55" y2="-0.85" layer="51"/>
+<rectangle x1="0.75" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.75" y1="0.85" x2="1.2" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="0.1" y1="0.85" x2="0.55" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="-0.55" y1="0.85" x2="-0.1" y2="1.5" layer="51" rot="R180"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.75" y2="1.5" layer="51" rot="R180"/>
+<smd name="1" x="-0.975" y="-1.225" dx="0.45" dy="1" layer="1"/>
+<smd name="2" x="-0.325" y="-1.225" dx="0.45" dy="1" layer="1"/>
+<smd name="3" x="0.325" y="-1.225" dx="0.45" dy="1" layer="1"/>
+<smd name="4" x="0.975" y="-1.225" dx="0.45" dy="1" layer="1"/>
+<smd name="5" x="0.975" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
+<smd name="6" x="0.325" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
+<smd name="7" x="-0.325" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
+<smd name="8" x="-0.975" y="1.225" dx="0.45" dy="1" layer="1" rot="R180"/>
+<text x="0" y="0" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-2.5" size="1" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MAX17501">
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="!RESET" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="EN" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="FB" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="LX" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="NC/COMP" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="PGND" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SS" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="VCC" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="VIN" x="-15.24" y="10.16" visible="pin" length="middle"/>
+</symbol>
+<symbol name="MAX3051">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="CANH" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="CANL" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RS" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="RXD" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="SHDN" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="TXD" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="VCC" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAX17501" prefix="U">
+<gates>
+<gate name="G$1" symbol="MAX17501" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TDFN-10">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="P$8"/>
+<connect gate="G$1" pin="EN" pad="P$3"/>
+<connect gate="G$1" pin="FB" pad="P$5"/>
+<connect gate="G$1" pin="GND" pad="P$9"/>
+<connect gate="G$1" pin="LX" pad="P$10"/>
+<connect gate="G$1" pin="NC/COMP" pad="P$7"/>
+<connect gate="G$1" pin="PGND" pad="P$1 P$11"/>
+<connect gate="G$1" pin="SS" pad="P$6"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
+<connect gate="G$1" pin="VIN" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX3051" prefix="U">
+<gates>
+<gate name="G$1" symbol="MAX3051" x="0" y="0"/>
+</gates>
+<devices>
+<device name="EKA" package="SOT23-8L">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RS" pad="8"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="SHDN" pad="5"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="r2p_connector">
+<packages>
+<package name="SAMTEC_FTSH-105-TH">
+<wire x1="-5" y1="2.5" x2="5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="5" y1="2.5" x2="5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="5" y1="-1.25" x2="-5" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-5" y1="-1.25" x2="-5" y2="2.5" width="0.127" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="2" x="-2.54" y="1.27" drill="0.7112" diameter="1.016"/>
+<pad name="3" x="-1.27" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="4" x="-1.27" y="1.27" drill="0.7112" diameter="1.016"/>
+<pad name="5" x="0" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="6" x="0" y="1.27" drill="0.7112" diameter="1.016"/>
+<pad name="7" x="1.27" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="8" x="1.27" y="1.27" drill="0.7112" diameter="1.016"/>
+<pad name="9" x="2.54" y="0" drill="0.7112" diameter="1.016"/>
+<pad name="10" x="2.54" y="1.27" drill="0.7112" diameter="1.016"/>
+<circle x="-4" y="0" radius="0.5" width="0.2" layer="51"/>
+<circle x="-4" y="0" radius="0.5" width="0.2" layer="48"/>
+</package>
+<package name="SAMTEC_FTSH-105">
+<wire x1="-5.5" y1="2" x2="5.5" y2="2" width="0.1" layer="51"/>
+<wire x1="5.5" y1="2" x2="5.5" y2="-2" width="0.1" layer="51"/>
+<wire x1="5.5" y1="-2" x2="-5.5" y2="-2" width="0.1" layer="51"/>
+<wire x1="-5.5" y1="-2" x2="-5.5" y2="2" width="0.1" layer="51"/>
+<smd name="P$1" x="-2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$2" x="-2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$4" x="-1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$5" x="0" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$6" x="0" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$7" x="1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$8" x="1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$9" x="2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="P$10" x="2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<circle x="-4" y="-1" radius="0.5" width="0.2" layer="21"/>
+<circle x="-4" y="-1" radius="0.5" width="0.2" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="JTAG">
+<wire x1="0" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<pin name="1" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="2" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="3" x="-2.54" y="10.16" visible="pin" length="short"/>
+<pin name="4" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="5" x="-2.54" y="7.62" visible="pin" length="short"/>
+<pin name="6" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="7" x="-2.54" y="5.08" visible="pin" length="short"/>
+<pin name="8" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="9" x="-2.54" y="2.54" visible="pin" length="short"/>
+<pin name="10" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="JTAG">
+<gates>
+<gate name="G$1" symbol="JTAG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SMD" package="SAMTEC_FTSH-105">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="10" pad="P$10"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+<connect gate="G$1" pin="9" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-TH" package="SAMTEC_FTSH-105-TH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -12161,7 +12126,7 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="330"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="U$4" library="samtec" deviceset="FTSH-105" device="TH" value="FTSH-105TH"/>
+<part name="U$4" library="r2p_connector" deviceset="JTAG" device="-TH" value="JTAG-TH"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="J2" library="OPL Eagle Library" deviceset="GROVE-4P-2.0" device="-3470130P1"/>
@@ -12175,12 +12140,12 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <part name="C9" library="rcl" deviceset="C-EU" device="C0805"/>
 <part name="GND2" library="supply" deviceset="GND" device=""/>
 <part name="GND3" library="supply" deviceset="GND" device=""/>
-<part name="U$3" library="maxim" deviceset="MAX17501" device=""/>
+<part name="U$3" library="r2p_ic" deviceset="MAX17501" device=""/>
 <part name="J1" library="OPL Eagle Library" deviceset="GROVE-4P-2.0" device="-3470130P1"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="FRAME1" library="frames" deviceset="DINA3_L" device=""/>
 <part name="GND13" library="supply" deviceset="GND" device=""/>
-<part name="SOT1" library="maxim" deviceset="MAX3051" device="EKA"/>
+<part name="SOT1" library="r2p_ic" deviceset="MAX3051" device="EKA"/>
 <part name="U$1" library="r2p_pcb" deviceset="PCB_25X45" device=""/>
 <part name="U$5" library="abracon" deviceset="ASD" device=""/>
 <part name="U$7" library="st" deviceset="MP34DT01" device=""/>
@@ -12485,18 +12450,18 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <segment>
 <wire x1="17.78" y1="60.96" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="60.96" x2="15.24" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="P$9"/>
+<pinref part="U$4" gate="G$1" pin="9"/>
 <pinref part="GND19" gate="1" pin="GND"/>
-<pinref part="U$4" gate="G$1" pin="P$3"/>
+<pinref part="U$4" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="68.58" x2="15.24" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="68.58" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <junction x="15.24" y="60.96"/>
-<pinref part="U$4" gate="G$1" pin="P$5"/>
+<pinref part="U$4" gate="G$1" pin="5"/>
 <wire x1="15.24" y1="66.04" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="63.5" x2="15.24" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="66.04" x2="15.24" y2="66.04" width="0.1524" layer="91"/>
 <junction x="15.24" y="66.04"/>
-<pinref part="U$4" gate="G$1" pin="P$7"/>
+<pinref part="U$4" gate="G$1" pin="7"/>
 <wire x1="17.78" y1="63.5" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
 <junction x="15.24" y="63.5"/>
 </segment>
@@ -12708,7 +12673,7 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <segment>
 <wire x1="17.78" y1="71.12" x2="15.24" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="71.12" x2="15.24" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
+<pinref part="U$4" gate="G$1" pin="1"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -12822,7 +12787,7 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <segment>
 <wire x1="33.02" y1="71.12" x2="38.1" y2="71.12" width="0.1524" layer="91"/>
 <label x="38.1" y="71.12" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P$2"/>
+<pinref part="U$4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="JTCK" class="0">
@@ -12834,7 +12799,7 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <segment>
 <wire x1="33.02" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
 <label x="38.1" y="68.58" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P$4"/>
+<pinref part="U$4" gate="G$1" pin="4"/>
 </segment>
 </net>
 <net name="JTDO" class="0">
@@ -12846,7 +12811,7 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <segment>
 <wire x1="33.02" y1="66.04" x2="38.1" y2="66.04" width="0.1524" layer="91"/>
 <label x="38.1" y="66.04" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P$6"/>
+<pinref part="U$4" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="JTDI" class="0">
@@ -12858,7 +12823,7 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <segment>
 <wire x1="33.02" y1="63.5" x2="38.1" y2="63.5" width="0.1524" layer="91"/>
 <label x="38.1" y="63.5" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P$8"/>
+<pinref part="U$4" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -12894,7 +12859,7 @@ wire to board 1.25 mm (.049 inch) pitch header</description>
 <segment>
 <wire x1="33.02" y1="60.96" x2="38.1" y2="60.96" width="0.1524" layer="91"/>
 <label x="38.1" y="60.96" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="P$10"/>
+<pinref part="U$4" gate="G$1" pin="10"/>
 </segment>
 </net>
 <net name="CAN_RX" class="0">
